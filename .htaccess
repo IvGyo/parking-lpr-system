@@ -1,1 +1,7 @@
-Flask==2.3.3
+PassengerEnabled On
+PassengerAppRoot /home/teamdoor/b2c.teamdoors.com/parking_lpr_system
+PassengerPython /home/teamdoor/virtualenv/parking_lpr_system/3.10/bin/python
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /parking_lpr_system/app.py/$1 [QSA,PT,L]
