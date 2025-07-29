@@ -1,3 +1,10 @@
 PassengerEnabled on
-PassengerAppRoot /home/teamdoor/b2c.teamdoors.com/public_html
-PassengerPython /usr/bin/python3
+PassengerAppRoot /home/teamdoor/b2c.teamdoors.com/parking_lpr_system
+PassengerAppType wsgi
+PassengerStartupFile app.py
+
+<FilesMatch "\.py$">
+    SetHandler passenger
+</FilesMatch>
+
+Options -MultiViews
