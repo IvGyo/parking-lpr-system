@@ -3,7 +3,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Parking LPR system works!'
-
-if __name__ == '__main__':
-    app.run()
+    return '✅ Parking LPR System works!'
